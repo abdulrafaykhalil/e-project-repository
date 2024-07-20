@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden World / Tools</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../picture/Home/o-Logo.png">
+    <link rel="stylesheet" href="../../Link/bootstrap-(css)/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../Link/js/bootstrap.js"></script>
+    <script src="../../Link/jquery/jquery-3.7.1.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: beige;
+            transition: all 0.6s ease;
+        }
+
+        .about-header {
+            background-image: url("pic/about_header_bg.jpg");
+            background-size: cover;
+        }
+
+        .all-btn {
+            color: white;
+            background-color: rgb(54, 158, 54);
+        }
+
+        .all-btn:hover {
+            border-radius: 10px 30px;
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            transition: all 0.6s ease;
+        }
+
+        .book-img {
+            border-radius: 0px 30px 0px 0px;
+        }
+
+        .box-shdw:hover {
+            Box-shadow: 0px 0px 10px black;
+            transition: all 0.3s ease;
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("../../picture/footer/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .icon-heart {
+            position: relative;
+            bottom: 50px;
+            width: 30px;
+            border-radius: 50px;
+            background-color: green;
+            height: fit-content;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- main info & Nav bar-->
+
+    <div class="section">
+        <div class="about-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container mt-5">
+                        <a class="navbar-brand"><img src="../../picture/Home/Logo.png" style="width: 200px;" alt=""></a>
+                        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                                        href="../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../pages/About/About-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3 m-3" style="width: 100px; " href="../Service/Service.html">Services</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-page">
+                            <h1 class=" display-4 mx-4 px-3 mb-5 ms-5 my-5"
+                                style=" border-left: 6px solid #8BAD21;border-bottom: 1px solid #8BAD21; color: #8BAD21; width: fit-content; border-top: 1px solid #8BAD21;border-right: 6px solid #8BAD21; border-radius: 8px;">
+                                Gardening Tools</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our Tools  -->
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Electric Grass Trimmer.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Electric Grass Trimmer</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Electric Grass Trimmer.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Wheel-Barrow.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Wheel Barrow.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/wheel Barrow.html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Watering-can  (2).png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Watering can.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Garden Watering Can (p).html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Watering-can  (1).png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Watering can.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Garden Watering Can (s).html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Trowel.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Trowel.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Trowel.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Secateurs.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Secateurs.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Secateurs.html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Rake.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Rake.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Rake.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/hoe.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoe</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Hoe.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/sprayer.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sprayer.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Sprayer.html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Garden-hose.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Garden hose.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Hose.html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/garden shears.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Garden shears.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Garden shears.html" class="col-11 btn all-btn btn-sm"
+                        style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                    <img class="book-img" src="pic/Boots.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Boots.</h5>
+                    </div>
+                    <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+                    <a href="Tools/Boots.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="ftr-img">
+        <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+            <div class="content-wrap pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <img src="../../picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                                <p>Embark on a journey of discovery and find solace amidst the stunning flora at
+                                    Garden
+                                    World, your
+                                    gateway to nature's paradise.</p>
+                                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.instagram.com/" target="_blank">
+                                        <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Contact Info
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Address :</div>
+                                    <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Office :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Fax :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Email :</div>
+                                    <div class="col-7">gardenworld@gmail.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Opening Hours
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Mon - Sat :</div>
+                                    <div class="col-7">08:00 - 17:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Sunday :</div>
+                                    <div class="col-7">09:00 - 15:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Friday :</div>
+                                    <div class="col-7">Closed</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <img src="../../picture/footer/worker-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024
+                            &copy; RAFAY & RIZWAN (GARDEN WORLD) All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.bi, .bi-heart').click(function () {
+                $(this).toggleClass('fa fa-heart bi bi-heart');
+            });
+        });
+        $('.card').hover(
+            function () {
+                $(this).find('.bi-heart').removeClass('d-none');
+            },
+            function () {
+                $(this).find('.bi-heart').addClass('d-none');
+            }
+        );
+    </script>
+
+</body>
+
+</html>

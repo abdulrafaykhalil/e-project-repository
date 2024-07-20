@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Details</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../picture/Home/o-Logo.png">
+    <link rel="stylesheet" href="../../../Link/bootstrap-(css)/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../../Link/js/bootstrap.js"></script>
+    <script src="../../../Link/jquery/jquery-3.7.1.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .all-btn {
+            color: white;
+            background-color: rgb(54, 158, 54);
+        }
+
+        .section {
+            background-image: url("img/about_header_bg.jpg");
+        }
+
+        .all-btn:hover {
+            border-radius: 10px 30px;
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            transition: all 0.6s ease;
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("img/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .error {
+            color: red;
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="section">
+        <div class="about-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container mt-5">
+                        <a class="navbar-brand"><img src="../../../picture/Home/Logo.png" style="width: 200px;"
+                                alt=""></a>
+                        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                                        href="../../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../../pages/About/About-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../Service/Service.html">Services</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-page">
+                            <h1 class=" display-4 mx-4 px-3 mb-5 ms-5 my-5"
+                                style=" border-left: 6px solid #8BAD21;border-bottom: 1px solid #8BAD21; color: #8BAD21; width: fit-content; border-top: 1px solid #8BAD21;border-right: 6px solid #8BAD21; border-radius: 8px;">
+                                Billing Details
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div style="display: flex; justify-content: space-evenly; gap: 15px; height: fit-content;">
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="text" class="form-control" id="firstName" placeholder="First name" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"
+                        style="font-size: x-large; color: green;"></i></span>
+                <div class="error" id="firstNameError"></div>
+            </div>
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="text" class="form-control" id="lastName" placeholder="Last name" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"
+                        style="font-size: x-large; color: green;"></i></span>
+                <div class="error" id="lastNameError"></div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; gap: 15px; height: fit-content;">
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"
+                        style="font-size: x-large; color: green;"></i></span>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="text" class="form-control" id="phone" placeholder="Phone no" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"
+                        style="font-size: x-large; color: green;"></i></span>
+                <div class="error" id="phoneError"></div>
+            </div>
+        </div>
+        <h5>Country</h5>
+        <select class="btn all-btn" style="text-transform: capitalize; justify-content: center;">
+            <option disabled selected>Select Country</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Germany">Germany</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Canada">Canada</option>
+            <option value="West Indies">West Indies</option>
+            <option value="Ireland">Ireland</option>
+        </select>
+        <div class="error" id="countryError"></div>
+        <h5>Address</h5>
+        <div style="display: flex; gap: 15px; width: 100%; height: fit-content;">
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="text" class="form-control" id="address1" placeholder="House number and street name"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                <div class="error" id="address1Error"></div>
+            </div>
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="text" class="form-control" id="address2" placeholder="Apartment, suite, unit (optional)"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <h5>Town</h5>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="city" placeholder="City" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <div class="error" id="cityError"></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>State</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="state" placeholder="State" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <div class="error" id="stateError"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>ZIP</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="zip" placeholder="Code" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <div class="error" id="zipError"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>Order Note (optional)</h5>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="orderNote"></textarea>
+            <label for="orderNote">Note about your order e.g., special note for delivery (optional)</label>
+        </div>
+        <h5>Payment Method</h5>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+            <div class="border" style="width: 48%;">
+                <input type="radio" name="payment" class="payment" id="checkPayment"><b> Check Payment</b><br>
+                <p class="payment-text" style="box-shadow: 0px 0px 10px green; display: none;">Please send a check to
+                    Store
+                    Name, Store Street,<br> Store Town, Store State / County, Store Postcode.
+                    <hr>
+                </p>
+                <input type="radio" name="payment" class="payment" id="cashOnDelivery"><b> Cash On Delivery</b>
+                <p class="payment-text" style="box-shadow: 0px 0px 10px green; display: none;">Please send a check to
+                    Store
+                    Name, Store Street,<br> Store Town, Store State / County, Store Postcode.
+                </p>
+            </div>
+        </div>
+        <p style="width: 50%;">Your personal data will be used to process your order, support your experience throughout
+            this website, and for other purposes described in our privacy policy.
+        </p>
+        <a href="#" class="btn all-btn" id="orderPlace">ORDER PLACE</a>
+    </div>
+    <div class="ftr-img mt-5">
+        <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+            <div class="content-wrap pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <img src="../../../picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                                <p>Embark on a journey of discovery and find solace amidst the stunning flora at
+                                    Garden
+                                    World, your
+                                    gateway to nature's paradise.</p>
+                                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.instagram.com/" target="_blank">
+                                        <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Contact Info
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Address :</div>
+                                    <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Office : 3</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Fax :</div>
+                                    <div class="col-7"></div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Email :</div>
+                                    <div class="col-7">gardenworld@gmail.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Opening Hours
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Mon - Sat :</div>
+                                    <div class="col-7">08:00 - 17:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Sunday :</div>
+                                    <div class="col-7">09:00 - 15:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Friday :</div>
+                                    <div class="col-7">Closed</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <img src="../../../picture/footer/worker-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024
+                            &copy; RAFAY (GARDEN WORLD) All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".payment").click(function () {
+                $(".payment-text").hide();
+                $(this).next("p").show();
+            });
+
+            $("#orderPlace").click(function (e) {
+                e.preventDefault();
+                validateForm();
+            });
+
+            function validateForm() {
+                let isValid = true;
+
+                if ($("#firstName").val().trim() === "") {
+                    $("#firstNameError").text("First name is required.");
+                    isValid = false;
+                } else {
+                    $("#firstNameError").text("");
+                }
+
+                if ($("#lastName").val().trim() === "") {
+                    $("#lastNameError").text("Last name is required.");
+                    isValid = false;
+                } else {
+                    $("#lastNameError").text("");
+                }
+
+                if ($("#email").val().trim() === "") {
+                    $("#emailError").text("Email is required.");
+                    isValid = false;
+                } else if (!validateEmail($("#email").val().trim())) {
+                    $("#emailError").text("Enter a valid email.");
+                    isValid = false;
+                } else {
+                    $("#emailError").text("");
+                }
+
+                if ($("#phone").val().trim() === "") {
+                    $("#phoneError").text("Phone number is required.");
+                    isValid = false;
+                } else {
+                    $("#phoneError").text("");
+                }
+
+                if ($("#country").val() === null) {
+                    $("#countryError").text("Country is required.");
+                    isValid = false;
+                } else {
+                    $("#countryError").text("");
+                }
+
+                if ($("#address1").val().trim() === "") {
+                    $("#address1Error").text("Address is required.");
+                    isValid = false;
+                } else {
+                    $("#address1Error").text("");
+                }
+
+                if ($("#city").val().trim() === "") {
+                    $("#cityError").text("City is required.");
+                    isValid = false;
+                } else {
+                    $("#cityError").text("");
+                }
+
+                if ($("#state").val().trim() === "") {
+                    $("#stateError").text("State is required.");
+                    isValid = false;
+                } else {
+                    $("#stateError").text("");
+                }
+
+                if ($("#zip").val().trim() === "") {
+                    $("#zipError").text("ZIP code is required.");
+                    isValid = false;
+                } else {
+                    $("#zipError").text("");
+                }
+
+                if (isValid) {
+                    alert("Order placed successfully!");
+                }
+            }
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

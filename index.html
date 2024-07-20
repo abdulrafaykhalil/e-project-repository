@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden World</title>
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Home/o-Logo.png">
+  <link rel="stylesheet" href="Link/bootstrap-(css)/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="Link/js/bootstrap.js"></script>
+  <script src="Link/jquery/jquery-3.7.1.js"></script>
+  <script src="Link/jquery/jquery.validate.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      transition: all 0.6s ease;
+    }
+
+    .container1 {
+      width: 100%;
+      background-image: url("picture/Home/home-pic.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .heading1 {
+      text-align: start;
+      color: white;
+      font-size: 60px;
+      margin-top: 100px;
+      margin-left: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bolder;
+    }
+
+    .heading2 {
+      color: white;
+      text-align: start;
+      font-size: 50px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bolder;
+    }
+
+    .wcu-icon-o:hover {
+      background-color: #17201B;
+      transform: rotate(360deg);
+    }
+
+    .wcu-icon-o:hover .icon-clr {
+      color: seagreen;
+    }
+
+    .all-btn {
+      color: white;
+      background-color: rgb(54, 158, 54);
+    }
+
+    .all-btn:hover {
+      border-radius: 10px 30px;
+      background-color: white;
+      border: 1px solid green;
+      color: green;
+      transition: all 0.6s ease;
+    }
+
+    .book-img {
+      border-radius: 0px 30px 0px 0px;
+    }
+
+    .book-bdr {
+      border: 5px solid lightgreen;
+      border-radius: 30px;
+    }
+
+    .shop-img {
+      border-radius: 50px;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .box-shdw:hover {
+      Box-shadow: 0px 0px 10px black;
+      transition: all 0.3s ease;
+    }
+
+    .box-gallery .project-info {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    .icon-img:hover {
+      opacity: 1;
+    }
+
+    .hp-bg {
+      background-image: url("picture/have-problem/bg-pic.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+
+    .cstmr {
+      width: 50%;
+    }
+
+    .ftr-icon:hover .ftr-i-icon {
+      color: black;
+    }
+
+    .ftr-img {
+      background-image: url("picture/footer/ftr-img.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media only screen and (max-width:600px) {
+      .heading1 {
+        font-size: 40px;
+      }
+
+      .heading2 {
+        font-size: 30px;
+      }
+
+
+    }
+
+    @media only screen and (max-width:700px) {
+      .cstmr {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav-Bar And Home-picture-->
+
+  <div class="container1">
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container mt-5">
+        <a class="navbar-brand"><img src="picture/Home/Logo.png" style="width: 200px;" alt=""></a>
+        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " href="pages/About/About-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                href="pages/Service/Service.html">Services</a>
+            </li>
+          </ul>
+          <form class="d-flex m-3" role="search">
+            <input class="form-control me-2" style="width: 250px;" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <span>
+      <h1 class="heading1">THE GARDENAREA!</h1>
+    </span>
+    <span>
+      <h3 class="heading2">Extend Your <br>
+        Home with Beautiful <br>
+        Garden Design.
+      </h3>
+    </span>
+    <div>.</div>
+  </div>
+
+
+  <a href="pages/tools/Tools.html" class="btn all-btn" style="display: none;"></a>
+
+
+
+  <!-- Why Choose Us -->
+
+  <div class="container rounded mt-5 ">
+    <div class="row">
+      <h2 class="text-center mb-2 mt-3">Why choose us?</h2>
+      <p class="text-center mb-5">We are committed to providing quality gardening services to our customers.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="card border-0">
+          <div class="d-flex justify-content-center">
+            <div class="wcu-icon-o d-flex justify-content-center align-items-center"
+              style="border: 1px solid black; width: 90px; height: 90px; border-radius: 50px; color:black;"><i
+                class='fa fa-globe icon-clr' style="font-size:80px"></i></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center mb-4">The Best in Pakistan</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card border-0">
+          <div class="d-flex justify-content-center">
+            <div class="wcu-icon-o d-flex justify-content-center align-items-center"
+              style="border: 1px solid black;  width: 90px; height: 90px; border-radius: 50px; color: black;"><i
+                class="fa fa-star icon-clr" style="font-size: 80px;"></i></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">High Quality Services</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card border-0">
+          <div class="d-flex justify-content-center">
+            <div class="wcu-icon-o d-flex justify-content-center align-items-center"
+              style="border: 1px solid black;  width: 90px; height: 90px; border-radius: 50px; color: black;"><i
+                class="fa fa-thumbs-up icon-clr" style="font-size:70px"></i></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Affordable Pricing</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card border-0">
+          <div class="d-flex justify-content-center">
+            <div class="wcu-icon-o d-flex justify-content-center align-items-center"
+              style="border: 1px solid black; width: 90px; height: 90px; border-radius: 50px; color: black;"><i
+                class="fa fa-certificate icon-clr" style="font-size:80px"></i></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Certified Expert</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Have Problem with your Gardening? -->
+
+  <div class="content-wrap py-0 bg-success mt-5 hp-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-7">
+          <div class="mt-5">
+            <h2>
+              Have Problem with your Gardening?
+            </h2>
+            <p class=" mt-3 mb-5">Struggling with your gardening? Let our experts help you diagnose and treat any
+              issues. We offer personalized solutions for every garden problem.</p>
+          </div>
+          <a href="pages/contact/contact.html" class="btn btn-lg all-btn">CONTACT NOW</a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <div class="img-cta">
+            <img src="picture/have-problem/worker3.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKS -->
+
+  <div class="container book-bdr mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class=" text-center m-4">Gardening <span class="text-success">Books</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+          <img class="book-img" src="picture/books/The Garden Primer.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">The Garden Primer.</h5>
+          </div>
+          <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+          <a href="pages/Books/books/The Garden Primer.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Detail</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+          <img class="book-img" src="picture/books/The Layered Garden.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">The Layered Garden.</h5>
+          </div>
+          <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+          <a href="pages/Books/books/The Layered Garden.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Detail</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+          <img class="book-img" src="picture/books/The New Organic Grower.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">New Organic Grower.</h5>
+          </div>
+          <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+          <a href="pages/Books/books/The New Organic Grower.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Detail</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+          <img class="book-img" src="picture/books/Old-Time Gardens Newly Set Forth.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Old-Time Gardens.</h5>
+          </div>
+          <i class="bi bi-heart position-absolute d-none" style="right: 20px; bottom: 70px;"></i>
+          <a href="pages/Books/books/Old-Time Gardens Newly Set Forth.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Detail</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="pages/Books/Book.html" class="btn all-btn m-4">More Books</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop Now -->
+
+  <div class="container  mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class=" text-center m-4">Shop Now</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card border-0 h-100 box-shdw" style="border-radius: 50px 50px 0px 0px ;">
+          <img class="shop-img" src="pages/shop Now/cart-content/img/product6.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Aloe Vera</h5>
+          </div>
+          <a href="pages/shop Now/cart-content/Aloe Vera.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Add to Cart</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card border-0 h-100 box-shdw" style="border-radius: 50px 50px 0px 0px ;">
+          <img class="shop-img" src="pages/shop Now/cart-content/img/product4.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Spider Plant</h5>
+          </div>
+          <a href="pages/shop Now/cart-content/Spider Plant.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Add to Cart</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card border-0 h-100 box-shdw" style="border-radius: 50px 50px 0px 0px ;">
+          <img class="shop-img" src="pages/shop Now/cart-content/img/product3.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Daisies</h5>
+          </div>
+          <a href="pages/shop Now/cart-content/Daisies.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Add to Cart</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="card border-0 h-100 box-shdw" style="border-radius: 50px 50px 0px 0px ;">
+          <img class="shop-img" src="pages/shop Now/cart-content/img/product1.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Pink Rose</h5>
+          </div>
+          <a href="pages/shop Now/cart-content/pink rose.html" class="col-11 btn all-btn btn-sm"
+            style="margin: 5px auto;">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="pages/shop Now/plant & flower.html" class="btn all-btn m-4">More Product</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Message  -->
+
+  <div style="background-color: white;">
+    <div class="content-wrap ">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-12 col-md-6">
+            <h2 class="no-after mb-5 mt-5">
+              Make an <span class="text-success">Appointment</span>
+            </h2>
+            <p class="mb-5">Welcome to Garden World! Schedule an appointment with our gardening experts for personalized
+              advice and assistance with plant selection, garden design, or maintenance tips. Fill out the form below,
+              and we'll contact you shortly to confirm your appointment. We look forward to helping you create your
+              perfect garden oasis!</p>
+            <form id="appointment-form">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Full Name..." name="fullname">
+              </div>
+              <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email..." name="email">
+              </div>
+              <div class="form-group mb-3">
+                <input type="number" class="form-control" placeholder="Your Number..." name="phone">
+              </div>
+              <div class="form-group mb-3">
+                <textarea class="form-control" rows="6" placeholder="Your message" name="message"></textarea>
+              </div>
+              <div class="form-group mb-4">
+                <input type="submit" class="btn all-btn">
+              </div>
+            </form>
+            <div class="spacer-70"></div>
+
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="picture/message/contact.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Modal  -->
+
+  <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h5 class="modal-title text-success" id="exampleModalLabel">Form Submission</h5>
+          <button type="button" class="close btn all-btn" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Your Form is Valid and Ready to be Submitted. Do you want to proceed?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn all-btn" id="confirmSubmit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Happy costumers -->
+
+  <div class="pb-3 bg-dark">
+    <h2 class="text-center m-4 p-4 text-light"><b>Happy Costumers</b></h2>
+    <div id="carouselExampleAutoplaying" class="container carousel cstmr slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row d-flex flex-wrap align-items-center px-5">
+            <div class="col-md-4">
+              <img src="picture/costumer/team-img1.jpg" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+              <h2 style="color: white;" class="text-center">R.D.J</h2>
+              <div class="d-flex" style="gap: 5px;">
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="bi bi-star " style="color: gold;"></i></div>
+              </div>
+              <p style="font-style: italic; color: white;">Garden World's friendly staff, huge variety of high-quality
+                plants, and reasonable prices make them a top-notch nursery.</p>
+              <h6 style="color: white; text-decoration: underline;" class="text-end">-Businessman</h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row d-flex flex-wrap align-items-center px-5">
+              <div class="col-md-4">
+                <img src="picture/costumer/team-img2.jpg" class="img-fluid rounded-circle">
+              </div>
+              <div class="col-md-8">
+                <h2 style="color: white;" class="text-center">Alexa</h2>
+                <div class="d-flex" style="gap: 5px;">
+                  <div><i class="fa fa-star " style="color: gold;"></i></div>
+                  <div><i class="fa fa-star " style="color: gold;"></i></div>
+                  <div><i class="fa fa-star " style="color: gold;"></i></div>
+                  <div><i class="fa fa-star " style="color: gold;"></i></div>
+                  <div><i class="fa fa-star " style="color: gold;"></i></div>
+                </div>
+                <p style="font-style: italic; color: white;">Garden World is unmatched in its selection of healthy
+                  plants and exceptional customer service.</p>
+                <h6 style="color: white; text-decoration: underline;" class="text-end">-Doctor </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row d-flex flex-wrap align-items-center px-5">
+            <div class="col-md-4">
+              <img src="picture/costumer/team-img3.jpg" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+              <h2 style="color: white;" class="text-center">Mr. Stark</h2>
+              <div class="d-flex" style="gap: 5px;">
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="fa fa-star " style="color: gold;"></i></div>
+                <div><i class="bi bi-star " style="color: gold;"></i></div>
+              </div>
+              <p style="font-style: italic; color: white;">Garden World offers the best plant variety and quality in
+                town. Highly recommended for landscape projects.</p>
+              <h6 style="color: white; text-decoration: underline;" class="text-end">-Farmer</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- our customers -->
+
+  <div class="container-fluid bg-light">
+    <div class="row d-flex flex-wrap text-center">
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client1.png" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client2.png" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client3.png" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client4.png" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client5.png" alt=""></div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img src="picture/client/client6.png" alt=""></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="ftr-img">
+    <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+      <div class="content-wrap pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div>
+                <img src="picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                <p>Embark on a journey of discovery and find solace amidst the stunning flora at Garden World, your
+                  gateway to nature's paradise.</p>
+                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                  <a class="all-btn rounded text-light ftr-icon"
+                    style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                    href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                  </a>
+                  <a class="all-btn rounded text-light ftr-icon"
+                    style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                    href="https://www.instagram.com/" target="_blank">
+                    <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                  </a>
+                  <a class="all-btn rounded text-light ftr-icon"
+                    style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                    href="https://www.pinterest.com/" target="_blank">
+                    <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                  </a>
+                  <a class="all-btn rounded text-light ftr-icon"
+                    style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                    href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div>
+                <h4 class="fw-bold mt-5 mb-3">
+                  Contact Info
+                </h4>
+
+                <div class="row mb-3">
+                  <div class="col-5">Address :</div>
+                  <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-5">Office : </div>
+                  <div class="col-7"> 021-366201020-3</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-5">Fax :</div>
+                  <div class="col-7"> 021-366201020-3</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-5">Email :</div>
+                  <div class="col-7">gardenworld@gmail.com</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div>
+                <h4 class="fw-bold mt-5 mb-3">
+                  Opening Hours
+                </h4>
+
+                <div class="row mb-3">
+                  <div class="col-5">Mon - Sat :</div>
+                  <div class="col-7">08:00 - 17:00</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-5">Sunday :</div>
+                  <div class="col-7">09:00 - 15:00</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-5">Friday :</div>
+                  <div class="col-7">Closed</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <img src="picture/footer/worker-footer.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024 &copy; RAFAY &
+              RIZWAN (GARDEN WORLD) All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // like (heart)
+      $('.bi, .bi-heart').click(function () {
+        $(this).toggleClass('fa fa-heart bi bi-heart');
+      });
+      $('.card').hover(
+        function () {
+          $(this).find('.bi-heart').removeClass('d-none');
+        },
+        function () {
+          $(this).find('.bi-heart').addClass('d-none');
+        }
+      );
+
+      // Appointment form 
+
+      jQuery('#appointment-form').validate({
+        rules: {
+          fullname: {
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: "required",
+          message: {
+            required: true,
+            minlength: 20
+          }
+        },
+        messages: {
+          fullname: {
+            required: "Please enter your name",
+            minlength: "Please enter your full name"
+          },
+          email: {
+            required: "Please enter your email address",
+            email: "Please enter your valid email address"
+          },
+          phone: "Please enter your phone number",
+          message: {
+            required: "Please enter a message",
+            minlength: "Message should be more than 20 words"
+          }
+        },
+
+        submitHandler:
+          function (form) {
+            $('#confirmationModal').modal('show');
+            $('#confirmSubmit').on('click', function () {
+              form.submit();
+            })
+          }
+
+      });
+
+
+    });
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../picture/Home/o-Logo.png">
+    <link rel="stylesheet" href="../../Link/bootstrap-(css)/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../Link/js/bootstrap.js"></script>
+    <script src="../../Link/jquery/jquery-3.7.1.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: beige;
+            transition: all 0.6s ease;
+        }
+
+        .section {
+            background-image: url("../contact/contact-img/about_header_bg.jpg");
+        }
+
+        .all-btn {
+            color: white;
+            background-color: rgb(54, 158, 54);
+        }
+
+        .all-btn:hover {
+            border-radius: 10px 30px;
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            transition: all 0.6s ease;
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("../../picture/footer/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .card {
+            border: none !important;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        .card-img {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .card-img img {
+            transition: transform .5s ease;
+        }
+
+        .card-img:hover img {
+            transform: scale(1.1);
+        }
+
+        .subheading {
+            font-size: 24px;
+            color: #8BAD21;
+        }
+
+        .pricing-card {
+            position: relative;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 0;
+            background-color: #F6F6F6;
+            border-top: 5px solid #8BAD21;
+            margin-left: 15px;
+        }
+
+        .pricing-card:hover {
+            box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .pricing-card .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .pricing-card .price {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 10px 0;
+            position: relative;
+            color: #ffffff;
+            background-color: #8BAD21;
+            margin-left: -15px;
+        }
+
+        .pricing-card .price:before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            bottom: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #222222;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
+        .pricing-card .price .mon {
+            font-size: 24px;
+
+        }
+
+        .pricing-card .features ul {
+            list-style: outside none none;
+            margin: 0;
+            padding: 35px 0;
+        }
+
+        .pricing-card .features ul li {
+            padding: 8px 0;
+        }
+
+        .pricing-card .btn {
+            background-color: #8BAD21;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            outline: none;
+            border: none;
+        }
+
+        .pricing-card .btn:hover {
+            background-color: #1b1b1b;
+        }
+
+        .text-green {
+            color: #8BAD21;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="about-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container mt-5">
+                        <a class="navbar-brand"><img src="../../picture/Home/Logo.png" style="width: 200px;" alt=""></a>
+                        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                                    href="../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                    href="../../pages/About/About-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " href="Service.html">Services</a>
+                                </li>
+                              </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-page">
+                            <h1 class=" display-4 mx-4 px-3 mb-5 ms-5 my-5"
+                                style=" border-left: 6px solid #8BAD21;border-bottom: 1px solid #8BAD21; color: #8BAD21; width: fit-content; border-top: 1px solid #8BAD21;border-right: 6px solid #8BAD21; border-radius: 8px;">
+                                Services</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------Services----------------------------------------------------- -->
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-1.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="landscape.html">Landscape Design</a></h4>
+                        <p class="card-text">Landscape design is the art of creating beautiful, functional outdoor
+                            spaces by blending natural and man-made elements
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-2.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="Planting & Removal.html">Planting & Removal</a></h4>
+                        <p class="card-text">Planting & Removal involves the strategic addition and elimination of
+                            plants to enhance landscape aesthetics, health, and functionality
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-3.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="Garden Care.html">Garden Care</a></h4>
+                        <p class="card-text">Garden Care encompasses the regular maintenance and nurturing of a garden,
+                            including watering, pruning, weeding, fertilizing, and pest control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-4.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="Irrigation & Drainage.html">Irrigation & Drainage</a></h4>
+                        <p class="card-text">Irrigation & Drainage involves the efficient management of water in a
+                            landscape, ensuring plants receive adequate moisture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-5.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="Stone and Hardscaping.html">Stone and Hardscaping</a></h4>
+                        <p class="card-text">Stone and Hardscaping involve creating durable and attractive outdoor
+                            features using materials like stone, brick, and concrete.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/services-img-6.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="Rubbish Removal.html">Rubbish Removal</a></h4>
+                        <p class="card-text">Rubbish Removal involves the efficient collection and disposal of waste
+                            materials from a property to maintain cleanliness and order.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- ----------------------------------Services----------------------------------------------------- -->
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="images/fertilizer image - Copy.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Soil Fertilizer</h5>
+                        </div>
+                        <a href="Soil&fertilizer.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="images/pestisides for plant image - Copy.jpeg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Pestisides for plant</h5>
+                        </div>
+                        <a href="Pesticides for plants.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="images/soil image - Copy.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Seeds</h5>
+                        </div>
+                        <a href="Seeds.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="images/Floret Farm's Cut Flower Garden.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Gardening Book</h5>
+                        </div>
+                        <a href="../Books/Book.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="images/sprayer.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Gardening Tools</h5>
+                        </div>
+                        <a href="../tools/Tools.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mb-4">
+                    <div class="card h-100 box-shdw" style="border-radius: 0px 30px 0px 0px;">
+                        <img class="book-img" src="lawn-care-img/worker3 - Copy.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lawn Care</h5>
+                        </div>
+                        <a href="lawn care.html" class="col-11 btn all-btn btn-sm" style="margin: 5px auto;">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="ftr-img">
+        <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+            <div class="content-wrap pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <img src="../../picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                                <p>Embark on a journey of discovery and find solace amidst the stunning flora at
+                                    Garden
+                                    World, your
+                                    gateway to nature's paradise.</p>
+                                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.instagram.com/" target="_blank">
+                                        <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Contact Info
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Address :</div>
+                                    <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Office :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Fax :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Email :</div>
+                                    <div class="col-7">gardenworld@gmail.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Opening Hours
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Mon - Sat :</div>
+                                    <div class="col-7">08:00 - 17:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Sunday :</div>
+                                    <div class="col-7">09:00 - 15:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Friday :</div>
+                                    <div class="col-7">Closed</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <img src="../../picture/footer/worker-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024
+                            &copy; Noman Saleem (GARDEN WORLD) All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>

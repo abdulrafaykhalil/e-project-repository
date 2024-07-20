@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisies </title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../picture/Home/o-Logo.png">
+    <link rel="stylesheet" href="../../../Link/bootstrap-(css)/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../../Link/js/bootstrap.js"></script>
+    <script src="../../../Link/jquery/jquery-3.7.1.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .all-btn {
+            color: white;
+            background-color: rgb(54, 158, 54);
+        }
+
+        .section {
+            background-image: url("img/about_header_bg.jpg");
+        }
+
+        .all-btn:hover {
+            border-radius: 10px 30px;
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            transition: all 0.6s ease;
+        }
+
+        .book-img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.5);
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("img/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sunflower-desc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .sunflower-description {
+            padding: 15px;
+        }
+
+        .cart-btn {
+            font-size: large;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 150px;
+            height: 40px;
+            transition: 1.5s all;
+        }
+
+        .long-description {
+            width: 100%;
+            height: fit-content;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .long-description h1 {
+            font-size: 36px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            text-transform: capitalize;
+        }
+
+        .related-product {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .related-head h1 {
+            font-size: 36px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            text-transform: capitalize;
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("img/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .counter-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .dis-p {
+            font-size: 20px;
+        }
+
+        .counter-value {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+        }
+
+        @media (max-width: 991.5px) {
+            .dis-p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="about-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container mt-5">
+                        <a class="navbar-brand"><img src="../../../picture/Home/Logo.png" style="width: 200px;" alt=""></a>
+                        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                                        href="../../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../../pages/About/About-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../Service/Service.html">Services</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-page">
+                            <h1 class=" display-4 mx-4 px-3 mb-5 ms-5 my-5"
+                                style=" border-left: 6px solid #8BAD21;border-bottom: 1px solid #8BAD21; color: #8BAD21; width: fit-content; border-top: 1px solid #8BAD21;border-right: 6px solid #8BAD21; border-radius: 8px;">
+                                Daisies</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center">Daisies</h1>
+
+
+    <div class="container">
+        <div class="row sunflower-desc mt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="card border-0 sunflower-img border">
+                    <img src="img/product3.png" alt="">
+                </div>
+            </div>
+            <div class=" col-lg-5 col-md-6 sunflower-description ">
+
+                <div class="d-flex" style="gap: 14px;">
+                    <h4><strike class="text-danger">$30.00</strike></h4>
+                    <h3>$25.00</h3>
+                </div>
+                <p class="dis-p">Daisies, with their bright white petals and cheerful yellow centers, are a symbol of
+                    innocence and purity. These hardy perennials thrive in various environments, from wild meadows to
+                    cultivated gardens, and are known for their ability to bloom in full sunlight and well-drained soil.
+                    Beyond their aesthetic appeal, daisies also attract pollinators such as bees and butterflies,
+                    contributing to the ecological balance and biodiversity of their surroundings.</p>
+                <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
+                    <div class="counter">
+                        <div class="counter-btn minus">-</div>
+                        <div class="counter-value">0</div>
+                        <div class="counter-btn plus">+</div>
+                    </div>
+                    <a href="cart.html" class="btn all-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="long-description">
+                <h1>long description</h1>
+                <p>
+
+                    Daisies, characterized by their bright white petals and sunny yellow centers, are iconic symbols of
+                    purity and innocence. These resilient perennials flourish in diverse environments, ranging from wild
+                    meadows to well-tended gardens. Preferring full sunlight and well-drained soil, daisies are
+                    relatively low-maintenance, making them a popular choice for both novice and experienced gardeners.
+                    Their simple yet captivating appearance adds a touch of cheerfulness to any landscape, making them a
+                    beloved feature in floral arrangements and garden designs.Beyond their visual appeal, daisies play a significant role in supporting local ecosystems. They
+                    attract pollinators such as bees and butterflies, which are essential for the pollination of many
+                    other plants. This pollinator activity promotes biodiversity and helps maintain healthy ecosystems.
+                    Additionally, daisies can be used in herbal medicine, offering natural remedies for various
+                    ailments. Their presence in gardens and wild areas alike highlights their versatility and ecological
+                    importance, making daisies much more than just a pretty flower.
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ftr-img mt-5">
+        <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+            <div class="content-wrap pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <img src="../../../picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                                <p>Embark on a journey of discovery and find solace amidst the stunning flora at
+                                    Garden
+                                    World, your
+                                    gateway to nature's paradise.</p>
+                                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.instagram.com/" target="_blank">
+                                        <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Contact Info
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Address :</div>
+                                    <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Office : 3</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Fax :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Email :</div>
+                                    <div class="col-7">gardenworld@gmail.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Opening Hours
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Mon - Sat :</div>
+                                    <div class="col-7">08:00 - 17:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Sunday :</div>
+                                    <div class="col-7">09:00 - 15:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Friday :</div>
+                                    <div class="col-7">Closed</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <img src="../../../picture/footer/worker-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024
+                            &copy; FARHAL & AHMED (GARDEN WORLD) All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+        let count = 0;
+
+        const minusBtn = document.querySelector('.minus');
+        const plusBtn = document.querySelector('.plus');
+        const counterValue = document.querySelector('.counter-value');
+
+        minusBtn.addEventListener('click', decreaseCount);
+        plusBtn.addEventListener('click', increaseCount);
+
+        function decreaseCount() {
+            count--;
+            counterValue.innerText = count;
+        }
+
+        function increaseCount() {
+            count++;
+            counterValue.innerText = count;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peperomia</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../picture/Home/o-Logo.png">
+    <link rel="stylesheet" href="../../../Link/bootstrap-(css)/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../../Link/js/bootstrap.js"></script>
+    <script src="../../../Link/jquery/jquery-3.7.1.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .all-btn {
+            color: white;
+            background-color: rgb(54, 158, 54);
+        }
+
+        .section {
+            background-image: url("img/about_header_bg.jpg");
+        }
+
+        .all-btn:hover {
+            border-radius: 10px 30px;
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            transition: all 0.6s ease;
+        }
+
+        .book-img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.5);
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("img/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sunflower-desc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .sunflower-description {
+            padding: 15px;
+        }
+
+        .cart-btn {
+            font-size: large;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 150px;
+            height: 40px;
+            transition: 1.5s all;
+        }
+
+        .long-description {
+            width: 100%;
+            height: fit-content;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .long-description h1 {
+            font-size: 36px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            text-transform: capitalize;
+        }
+
+        .related-product {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .related-head h1 {
+            font-size: 36px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            text-transform: capitalize;
+        }
+
+        .ftr-icon:hover .ftr-i-icon {
+            color: black;
+        }
+
+        .ftr-img {
+            background-image: url("img/ftr-img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .counter-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .dis-p {
+            font-size: 20px;
+        }
+
+        .counter-value {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+        }
+
+        @media (max-width: 991.5px) {
+            .dis-p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="about-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container mt-5">
+                        <a class="navbar-brand"><img src="../../../picture/Home/Logo.png" style="width: 200px;" alt=""></a>
+                        <button class="navbar-toggler" style=" background-color: rgb(54, 158, 54);" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; " aria-current="page"
+                                        href="../../../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../../pages/About/About-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn all-btn mx-3 m-3" style="width: 100px; "
+                                        href="../../Service/Service.html">Services</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn all-btn" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-page">
+                            <h1 class=" display-4 mx-4 px-3 mb-5 ms-5 my-5"
+                                style=" border-left: 6px solid #8BAD21;border-bottom: 1px solid #8BAD21; color: #8BAD21; width: fit-content; border-top: 1px solid #8BAD21;border-right: 6px solid #8BAD21; border-radius: 8px;">
+                                Peperomia</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center">Peperomia</h1>
+
+
+    <div class="container">
+        <div class="row sunflower-desc mt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="card border-0 sunflower-img border">
+                    <img src="img/product7.png" alt="">
+                </div>
+            </div>
+            <div class=" col-lg-5 col-md-6 sunflower-description ">
+
+                <div class="d-flex" style="gap: 14px;">
+                    <h4><strike class="text-danger">$50.00</strike></h4>
+                    <h3>$45.00</h3>
+                </div>
+                <p class="dis-p">Peperomia is a charming and versatile houseplant known for its compact size and
+                    striking foliage, which comes in a variety of shapes, colors, and textures. This plant, native to
+                    tropical and subtropical regions, features thick, succulent-like leaves that can be glossy,
+                    variegated, or patterned, adding visual interest to any indoor space. Peperomia thrives in
+                    well-draining soil and prefers bright, indirect light, making it an ideal choice for shelves, desks,
+                    and windowsills.</p>
+                <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
+                    <div class="counter">
+                        <div class="counter-btn minus">-</div>
+                        <div class="counter-value">0</div>
+                        <div class="counter-btn plus">+</div>
+                    </div>
+                    <a href="cart.html" class="btn all-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="long-description">
+                <h1>long description</h1>
+                <p>
+                    Peperomia, a delightful and diverse genus of small houseplants, is cherished for its attractive
+                    foliage and easy-care nature. With over 1,000 species, Peperomia plants exhibit a wide range of leaf
+                    shapes, sizes, and colors, often featuring striking patterns and textures. These compact plants are
+                    perfect for indoor settings, thriving in bright, indirect light and requiring minimal watering,
+                    making them ideal for both novice and experienced plant enthusiasts.
+                    Peperomia plants are not only aesthetically pleasing but also contribute to a healthy indoor
+                    environment by improving air quality. Their lush, waxy leaves can vary from deep green to variegated
+                    shades of cream, silver, and red, adding a touch of natural beauty to any room. Their small size
+                    makes them versatile for placement on desks, shelves, or windowsills, where they can add a
+                    refreshing splash of greenery without taking up much space. With their hardy nature and minimal
+                    maintenance needs, Peperomia plants are an excellent choice for enhancing the ambiance of homes and
+                    offices alike.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ftr-img mt-5">
+        <div class="footer text-light" style="background-color: rgba(0, 0, 0, 0.505);">
+            <div class="content-wrap pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <img src="../../../picture/Home/Logo.png" class="w-100 mt-4 mb-3" alt="logo bottom">
+                                <p>Embark on a journey of discovery and find solace amidst the stunning flora at
+                                    Garden
+                                    World, your
+                                    gateway to nature's paradise.</p>
+                                <div class="mt-5 d-flex flex-wrap justify-content-around">
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa fa-facebook ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.instagram.com/" target="_blank">
+                                        <i class="fa fa-instagram ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa fa-pinterest ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                    <a class="all-btn rounded text-light ftr-icon"
+                                        style="width:35px; height:35px; display: flex; justify-content: center; align-items: center; text-decoration: none;"
+                                        href="https://www.linkedin.com/" target="_blank">
+                                        <i class="fa fa-linkedin ftr-i-icon" style="font-size: inherit;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Contact Info
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Address :</div>
+                                    <div class="col-7">Aptech North Nazimabad Center , D-4 , Block H</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Office : 3</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Fax :</div>
+                                    <div class="col-7">021-366201020-3</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Email :</div>
+                                    <div class="col-7">gardenworld@gmail.com</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div>
+                                <h4 class="fw-bold mt-5 mb-3">
+                                    Opening Hours
+                                </h4>
+
+                                <div class="row mb-3">
+                                    <div class="col-5">Mon - Sat :</div>
+                                    <div class="col-7">08:00 - 17:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Sunday :</div>
+                                    <div class="col-7">09:00 - 15:00</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">Friday :</div>
+                                    <div class="col-7">Closed</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <img src="../../../picture/footer/worker-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-light d-flex justify-content-center align-items-center pt-2">Copyright 2024
+                            &copy; FARHAL & AHMED (GARDEN WORLD) All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+        let count = 0;
+
+        const minusBtn = document.querySelector('.minus');
+        const plusBtn = document.querySelector('.plus');
+        const counterValue = document.querySelector('.counter-value');
+
+        minusBtn.addEventListener('click', decreaseCount);
+        plusBtn.addEventListener('click', increaseCount);
+
+        function decreaseCount() {
+            count--;
+            counterValue.innerText = count;
+        }
+
+        function increaseCount() {
+            count++;
+            counterValue.innerText = count;
+        }
+    </script>
+</body>
+
+</html>
